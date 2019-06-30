@@ -11,6 +11,10 @@ instructor_evaluations = insteval %>%
     department = dept,
     rating = y
   ) %>%
+  mutate(
+    lecture_age_num = as.integer(lecture_age),
+    service = factor(service, labels = c('main', 'service'))
+  ) %>%
   as_tibble()
 
 

@@ -1,7 +1,7 @@
 #' Gapminder data.
 #'
-#' A recent download of the Gapminder data on life expectancy, GDP per capita, Gini coefficient, and
-#' population by country.
+#' A recent download of the Gapminder data on life expectancy, GDP per capita,
+#' Gini coefficient, and population by country.
 #'
 #' @format The main data frame \code{gapminder} has 40,953 rows and 7 variables:
 #' \describe{

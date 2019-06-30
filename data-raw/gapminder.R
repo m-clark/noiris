@@ -45,4 +45,20 @@ gapminder_2019 = Reduce(left_join, list(le, pop, gdp, gini)) %>%
   left_join(gapminder %>% select(country, continent) %>% distinct()) %>%
   mutate(year = as.integer(year))
 
+
+# later issues found that gapminder didn't have info on some; for now just fixing for pisa
+
+gapminder_2019 %>%
+  distinct(country, continent) %>%
+  filter(is.na(continent))
+
+gapminder_2019 = gapminder_2019 %>%
+  mutate(
+    continent = case_when(
+    country %in% c('Luxembourg', 'Latvia', 'Estonia') ~ 'Europe',
+    grepl(country, pattern = 'Korea')  ~ 'Asia',
+    TRUE ~ as.character(continent)
+  ))
+
 usethis::use_data(gapminder_2019, overwrite = TRUE)
+

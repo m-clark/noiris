@@ -21,8 +21,8 @@
 gapminder_2019
 }
 \description{
-A recent download of the Gapminder data on life expectancy, GDP per capita, Gini coefficient, and
-population by country.
+A recent download of the Gapminder data on life expectancy, GDP per capita,
+Gini coefficient, and population by country.
 }
 \details{
 While the data goes back to 1800, most of it prior to a couple of
