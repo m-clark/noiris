@@ -3,11 +3,14 @@
 #' State wildlife biologists want to model how many fish are being caught by
 #' fishermen at a state park.
 #'
-#' @format The main data frame \code{gapminder} has 40,953 rows and 7 variables:
+#' @format A tibble of 250 rows and 6 columns.  Good for demonstrating zero-inflated models.
 #' \describe{
-#'   \item{nofish}{?}
+#'   \item{nofish}{I've never seen this explained.  Originally 0 and 1, 0 is
+#'   equivalent to \code{livebait == 'yes'}, so I think it is whether the
+#'   primary motivation of the camping trip is for fishing or not.  So
+#'   \code{no?fish == 'yes'} means the trip was not just for fishing.}
 #'   \item{livebait}{whether live bait was used or not}
-#'   \item{camper}{ranges from 1800 to 2018}
+#'   \item{camper}{whether or not they brought a camper}
 #'   \item{persons}{how many total persons on the trip}
 #'   \item{child}{how many children present}
 #'   \item{count}{number of fish count}

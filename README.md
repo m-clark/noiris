@@ -12,8 +12,11 @@ This package will provide larger and at some point messier data.
 Right now it has:
 
   - `gapminder`: a 2019 pull from
-    [gapminder.org/data](http://www.gapminder.org/data/)
+    [gapminder.org/data](http://www.gapminder.org/data/). A nice
+    longitudinal/time-series data set.
   - `star_wars`: several data sets based on the [Star Wars
-    API](https://swapi.co/)
+    API](https://swapi.co/). Just for fun.
   - `insteval`: a nice-sized data set for mixed/multi-level modeling
-    taken from the `lme4` package
+    taken from the `lme4` package.
+  - `fish`: an accessible data set useful for demonstrating count and
+    zero-inflated models.
