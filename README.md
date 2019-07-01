@@ -1,5 +1,5 @@
 
-# noiris
+# noiris <img src="data-raw/noiris.png" style="margin: 0 auto; width: 10%">
 
 This package is primarily to provide data that is more similar to data
 people would typically come across in the wild, or is simply more
@@ -40,7 +40,7 @@ Right now it has:
 
 To do:
 
-  - \[ \] Data for classification.
-  - \[ \] Data for text analysis.
-  - \[ \] Data for image classification.
-  - \[ \] Data for survival analysis.
+  - [ ] Data for classification.
+  - [ ] Data for text analysis.
+  - [ ] Data for image classification.
+  - [ ] Data for survival analysis.
