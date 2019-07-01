@@ -1,4 +1,4 @@
-# raw data downloaded from the pisa data explorer; first save as xlsx, as the format is 2004 ffs
+# raw data downloaded from the pisa data explorer; first save as xlsx, as the format is Excel 2004 ffs
 
 library(tidyverse)
 
@@ -8,7 +8,7 @@ pisa_math_raw  = readxl::read_excel(
   skip = 11,
   col_names = TRUE,
   na = c('—', '†'),
-  n_max = 234 - 11
+  n_max = 234 - 11    # based on inspection
 )
 
 pisa_reading_raw  = readxl::read_excel(
@@ -17,7 +17,7 @@ pisa_reading_raw  = readxl::read_excel(
   skip = 11,
   col_names = TRUE,
   na = c('—', '†'),
-  n_max = 234 - 11    # based on inspection
+  n_max = 234 - 11
 )
 
 pisa_science_raw  = readxl::read_excel(
@@ -84,18 +84,18 @@ pisa = pisa %>%
   spread(variable, average) %>%
   arrange(country, year)
 
-# join to gapminder, assumes that has already been processed.
+# join to gapminder, assumes that has already been processed with gapminder.R.
 
 data("gapminder_2019")
 
-setdiff(pisa$country, gapminder_2019$country)
-intersect(pisa$country, gapminder_2019$country)
+# setdiff(pisa$country, gapminder_2019$country)
+# intersect(pisa$country, gapminder_2019$country)
 
 pisa = pisa %>%
   left_join(gapminder_2019)
-pisa %>%
-  filter(is.na(continent) & !grepl(country, pattern = 'International')) %>%
-  data.frame()
+# pisa %>%
+#   filter(is.na(continent) & !grepl(country, pattern = 'International')) %>%
+#   data.frame()
 
 # reorder
 pisa = pisa %>%
