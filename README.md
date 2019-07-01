@@ -42,4 +42,5 @@ To do:
 
   - \[ \] Data for classification.
   - \[ \] Data for text analysis.
+  - \[ \] Data for image classification.
   - \[ \] Data for survival analysis.
