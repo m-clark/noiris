@@ -10,7 +10,7 @@
 #'   \item{species}{Name, classification, designation, average lifespan, etc.}
 #'   \item{planets}{Name, rotation period, orbital period diameter, population, residents, etc.}
 #'   \item{starships}{Name, model, manufacturer, hyperdrive rating, etc.}
-#'   \item{vehicles}{Name, momdel, manufacturerr, cost, cargo capacity, etc.}
+#'   \item{vehicles}{Name, model, manufacturer, cost, cargo capacity, etc.}
 #'   }
 #'
 #' Each has a corresponding vector of just the observation names.
@@ -27,7 +27,7 @@
 #'   Wars API. Unfortunately it stops after the first Disney movie and so is
 #'   woefully incomplete, but that is an issue with the API itself and not the
 #'   \link[rwars]{rwars} package.  The data has been cleaned up to be more
-#'   useable, but may have some kinks to sort out still.
+#'   usable, but may have some kinks to sort out still.
 #'
 #'   All the data sets are \link[tibble]{tibble} class objects.
 #'

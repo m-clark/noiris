@@ -42,16 +42,16 @@ happiness_scores  = map_df(happiness_scores,
 world_happiness_report = janitor::clean_names(world_happiness_report) %>%
   rename(country = country_name) %>%
   left_join(happiness_scores)
-#
-#
-world_happiness_report %>%
-  select_if(is.numeric) %>%
-  cor(select(., happiness_score, dystopia_residual), use='pair') %>%
-  round(2)
-world_happiness_report %>%
-  select(happiness_score, dystopia_residual) %>%
-  cor(use='pair') %>%
-  round(2)
+
+# Checks
+# world_happiness_report %>%
+#   select_if(is.numeric) %>%
+#   cor(select(., happiness_score, dystopia_residual), use = 'pair') %>%
+#   round(2)
+# world_happiness_report %>%
+#   select(happiness_score, dystopia_residual) %>%
+#   cor(use = 'pair') %>%
+#   round(2)
 #
 # world_happiness_report %>%
 #   ggplot(aes(x = life_ladder, y=happiness_score)) +
@@ -59,5 +59,6 @@ world_happiness_report %>%
 
 world_happiness = world_happiness_report %>%
   select(-matches('standard_deviation|[0-9]'), -starts_with('most_people'))
+
 usethis::use_data(world_happiness, overwrite = TRUE)
 

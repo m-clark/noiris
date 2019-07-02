@@ -23,7 +23,7 @@ it easier to use and understand.
 
 Right now it has:
 
-  - `gapminder`: a 2019 pull from
+  - `gapminder_2019`: a 2019 pull from
     [gapminder.org/data](http://www.gapminder.org/data/). A nice
     longitudinal/time-series data set.
   - `star_wars`: several data sets based on the [Star Wars
@@ -36,13 +36,17 @@ Right now it has:
   - `pisa`: OECD’s Programme for International Student Assessment with
     international scores for math, science, and reading. Potentially
     good for demonstrating nonlinear relationships, imputing missing
-    data, longitudinal analyses.
+    data, longitudinal/spatial analyses.
+  - `world_happiness`: Multiyear data set with country level scores of
+    ‘happiness’. From 2019 World Happiness Report.
 
-incoming: world happiness report, wine ratings?
+incoming: wine ratings?
 
 To do:
 
-  - \[ \] Data for classification
-  - \[ \] Data for text analysis
-  - \[ \] Data for image classification
-  - \[ \] Data for survival analysis
+  - [ ] Data for basic classification
+  - [ ] Data for basic machine learning (reg and class)
+  - [ ] Data for text analysis
+  - [ ] Data for image classification
+  - [ ] Data for survival analysis
+  - [ ] Data for factor analysis/SEM (PCA?)

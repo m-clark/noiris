@@ -2,9 +2,11 @@
 #'
 #' The World Happiness Report is a survey of the state of global happiness that
 #' ranks countries by how happy their citizens perceive themselves to be. Almost
-#' all the information here is gleaned from the report and appendices.  This regards report data from 2008-2018 included in the 2019 report.
+#' all the information here is gleaned from the report and appendices.  This
+#' regards the report data from 2008-2018 included in the 2019 report.
 #'
-#' @format The main data frame \code{world_happiness} has 1704 rows and 18 variables:
+#' @format The main data frame \code{world_happiness} has 1704 rows and 18
+#'   variables:
 #' \describe{
 #'   \item{country}{factor with 36 levels, including the International average}
 #'   \item{year}{ranges from 2008 to 2018}
@@ -51,21 +53,23 @@
 #'   interchangeably throughout reports.  Presumably one would want to use the
 #'   ladder score, as it is the main measure.
 #'
-#'   According to the report- \quote{'Dystopia' is an imaginary country that has the
+#'   According to the report- "'Dystopia' is an imaginary country that has the
 #'   world's least-happy people. The purpose in establishing Dystopia is a
 #'   benchmark against which all countries can be favorably compared (no country
 #'   performs more poorly than Dystopia) in terms of each of the six key
 #'   variables, thus allowing each sub-bar to be of positive (or zero, in six
 #'   instances) width. The lowest scores observed for the six key variables,
-#'   therefore, characterize Dystopia.} The actual score is considered part of
+#'   therefore, characterize Dystopia." The actual score is considered part of
 #'   unexplained variance (i.e. residual).
 #'
-#'   In tables \code{ladder_score} and \code{positive_} and \code{negative_affect} are typically outcomes.
+#'   In tables \code{ladder_score} and \code{positive_} and
+#'   \code{negative_affect} are typically outcomes.
 #'
 #' @note This does not contain all the information available from the report
 #'   website.  Choices were made especially due to the amount of response and/or
 #'   arbitrarily determined relevancy.  Also, for reasons that are unclear, the
 #'   happiness score is labeled 'life ladder' in the raw data.
+#'
 #' @source \href{World Happiness Report 2019 Chapter 2 Appendix 1}{https://s3.amazonaws.com/happiness-report/2019/WHR19_Ch2A_Appendix1.pdf}, \href{World Happiness Report 2019 Chapter 2 Appendix 2}{https://s3.amazonaws.com/happiness-report/2019/WHR19_Ch2A_Appendix2.pdf}
 #' @examples
 #' library(noiris)
