@@ -5,7 +5,7 @@ This package is primarily to provide data that is more similar to data
 people would typically come across in the wild, or is simply more
 interesting or accessible (in my opinion), and more useful for
 instruction and workshops. Far too often examples use `iris`, `mtcars`,
-etc. for convenience, but these actually are inconvenient for
+etc. for convenience, but these are actually inconvenient for
 demonstrating real data and modeling problems, or are too small to even
 be realistic.
 
@@ -38,9 +38,11 @@ Right now it has:
     good for demonstrating nonlinear relationships, imputing missing
     data, longitudinal analyses.
 
+incoming: world happiness report, wine ratings?
+
 To do:
 
-  - [ ] Data for classification.
-  - [ ] Data for text analysis.
-  - [ ] Data for image classification.
-  - [ ] Data for survival analysis.
+  - \[ \] Data for classification
+  - \[ \] Data for text analysis
+  - \[ \] Data for image classification
+  - \[ \] Data for survival analysis
