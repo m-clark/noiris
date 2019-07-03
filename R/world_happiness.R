@@ -70,7 +70,7 @@
 #'   arbitrarily determined relevancy.  Also, for reasons that are unclear, the
 #'   happiness score is labeled 'life ladder' in the raw data.
 #'
-#' @source \href{World Happiness Report 2019 Chapter 2 Appendix 1}{https://s3.amazonaws.com/happiness-report/2019/WHR19_Ch2A_Appendix1.pdf}, \href{World Happiness Report 2019 Chapter 2 Appendix 2}{https://s3.amazonaws.com/happiness-report/2019/WHR19_Ch2A_Appendix2.pdf}
+#' @source \href{https://s3.amazonaws.com/happiness-report/2019/WHR19_Ch2A_Appendix1.pdf}{World Happiness Report 2019 Chapter 2 Appendix 1}, \href{https://s3.amazonaws.com/happiness-report/2019/WHR19_Ch2A_Appendix2.pdf}{World Happiness Report 2019 Chapter 2 Appendix 2}, \href{https://worldhappiness.report/faq/}{FAQ}
 #' @examples
 #' library(noiris)
 #' str(world_happiness)
