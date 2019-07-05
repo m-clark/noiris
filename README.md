@@ -6,8 +6,8 @@ people would typically come across in the wild, or is simply more
 interesting or accessible (in my opinion), and more useful for
 instruction and workshops. Far too often examples use `iris`, `mtcars`,
 etc. for convenience, but these are actually inconvenient for
-demonstrating real data and modeling problems, or are too small to even
-be realistic.
+demonstrating common data and modeling problems, or are too small to
+even be realistic.
 
 This package will provide larger and at some point messier data. The
 bias is towards data that could be understood regardless of
@@ -39,8 +39,8 @@ Right now it has:
     data, longitudinal/spatial analyses.
   - `world_happiness`: Multiyear data set with country level scores of
     ‘happiness’. From 2019 World Happiness Report.
-  - `sp500`: Daily S & P 500 data for a 10 year period cover +- 5 years
-    before and after the Great Recession low.
+  - `sp500`: Daily S & P 500 data for a 10 year period covering +- 5
+    years before and after the Great Recession low.
 
 incoming: wine ratings?
 
