@@ -1,8 +1,9 @@
 #' S & P 500 data.
 #'
-#' Lots of stock data.
+#' Daily stock data for the S & P 500 for a 10 year period.
 #'
 #' @format The nested main data frame \code{sp500} has 505 rows and 10 variables:
+#'
 #' \describe{
 #'   \item{ticker}{Company symbol}
 #'   \item{company}{Company name}
@@ -18,10 +19,11 @@
 #'   \item{pricing_data}{A list column. See details.}
 #'   }
 #'
-#' @details This is basic stock stock data for the current S & P 500 listing.
-#'   The time frame is a five year interval before and after the nadir of the
-#'   Great Recession (2009-03-03).  The final column is a list column where each
-#'   cell is a data frame with the following columns:
+#' @details This is basic stock stock data for the current S & P 500 listing
+#'   (see Wikipedia link). The time frame is a five year interval before and
+#'   after the nadir of the Great Recession (2009-03-03).  The final column is a
+#'   list column where each cell is a data frame with over a million rows and
+#'   the following columns:
 #'
 #' \describe{
 #'   \item{price_open}{}

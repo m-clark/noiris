@@ -39,14 +39,16 @@ Right now it has:
     data, longitudinal/spatial analyses.
   - `world_happiness`: Multiyear data set with country level scores of
     ‘happiness’. From 2019 World Happiness Report.
+  - `sp500`: Daily S & P 500 data for a 10 year period cover +- 5 years
+    before and after the Great Recession low.
 
 incoming: wine ratings?
 
 To do:
 
-  - [ ] Data for basic classification
-  - [ ] Data for basic machine learning (reg and class)
-  - [ ] Data for text analysis
-  - [ ] Data for image classification
-  - [ ] Data for survival analysis
-  - [ ] Data for factor analysis/SEM (PCA?)
+  - \[ \] Data for basic classification
+  - \[ \] Data for basic machine learning (reg and class)
+  - \[ \] Data for text analysis
+  - \[ \] Data for image classification
+  - \[ \] Data for survival analysis
+  - \[ \] Data for factor analysis/SEM (PCA?)
