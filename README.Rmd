@@ -6,7 +6,7 @@ encoding: 'UTF-8'
 
 # noiris <img src="data-raw/noiris.png" style="margin: 0 auto; width: 10%">
 
-This package is primarily to provide data that is more similar to data people would typically come across in the wild, or is simply more interesting or accessible (in my opinion), and more useful for instruction and workshops.  Far too often examples use `iris`, `mtcars`, etc. for convenience, but these are actually inconvenient for demonstrating real data and modeling problems, or are too small to even be realistic.  
+This package is primarily to provide data that is more similar to data people would typically come across in the wild, or is simply more interesting or accessible (in my opinion), and more useful for instruction and workshops.  Far too often examples use `iris`, `mtcars`, etc. for convenience, but these are actually inconvenient for demonstrating common data and modeling problems, or are too small to even be realistic.  
 
 This package will provide larger and at some point messier data.  The bias is towards data that could be understood regardless of discipline/background. In addition, it should have minimally several hundred observations, and often much larger, but not so large that analysis or data processing demonstration would take an inordinate amount of time.  However, it should have relatively few columns (unless for demonstration of a 'large p' type of problem/analysis, e.g. penalized regression.).
 
@@ -21,7 +21,7 @@ Right now it has:
 - `fish`: an accessible data set useful for demonstrating count and zero-inflated/hurdle models.
 - `pisa`: OECD's Programme for International Student Assessment with international scores for math, science, and reading.  Potentially  good for demonstrating nonlinear relationships, imputing missing data, longitudinal/spatial analyses. 
 - `world_happiness`: Multiyear data set with country level scores of 'happiness'. From 2019 World Happiness Report.
-- `sp500`: Daily S & P 500 data for a 10 year period cover +- 5 years before and after the Great Recession low.
+- `sp500`: Daily S & P 500 data for a 10 year period covering +- 5 years before and after the Great Recession low.
 
 incoming: wine ratings?
 
