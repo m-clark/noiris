@@ -22,7 +22,7 @@
 #'   \item{department}{a factor with 14 levels from 1:15, using a random code
 #'   for the department of the lecture.}
 #'   \item{rating}{a numeric vector of ratings of lectures by the students,
-#'   using the discrete scale 1:5, with meanings of ‘poor’ to ‘very good’.}
+#'   using the discrete scale 1:5, with meanings of 'poor' to 'very good'.}
 #'   }
 #'
 #' @details
