@@ -3,20 +3,26 @@
 \docType{data}
 \name{sp500}
 \alias{sp500}
-\title{S&P 500 data.}
-\format{The nested main data frame \code{sp500} has 505 rows and 10
-  variables:
+\title{S & P 500 data.}
+\format{The nested main data frame \code{sp500} has 505 rows and 10 variables:
 \describe{
-  \item{ticker}{}
-  \item{company}{}
+  \item{ticker}{Company symbol}
+  \item{company}{Company name}
   \item{sector}{Global Industry Classification Standard}
   \item{sub_industry}{Global Industry Classification Standard}
   \item{address}{City, State}
   \item{date_added}{}
-  \item{CIK}{A Central Index Key or CIK number is a number given to an individual, company, or foreign government by the United States Securities and Exchange Commission. The number is used to identify its filings in several online databases, including EDGAR.}
+  \item{CIK}{A Central Index Key or CIK number is a number given to an
+  individual, company, or foreign government by the United States Securities
+  and Exchange Commission. The number is used to identify its filings in
+  several online databases, including EDGAR.}
   \item{year_founded}{Year company was founded.}
   \item{pricing_data}{A list column. See details.}
   }}
+\source{
+Obtained via \href{https://cran.r-project.org/web/packages/BatchGetSymbols/vignettes/BatchGetSymbols-vignette.html}{\code{BatchGetSymbols}} package.
+\href{https://en.wikipedia.org/wiki/List_of_S&P_500_companies}{Wikipedia List of S & P 500 companies}.
+}
 \usage{
 sp500
 }
@@ -24,7 +30,22 @@ sp500
 Includ
 }
 \details{
+This is basic stock stock data for the current S & P 500 listing.
+  The time frame is a five year interval before and after the nadir of the
+  Great Recession (2009-03-03).  The final column is a list column where each
+  cell is a data frame with the following columns:
 
+\describe{
+  \item{price_open}{}
+  \item{price_high}{}
+  \item{price_low}{}
+  \item{price_close}{}
+  \item{volume}{}
+  \item{price_adjusted}{}
+  \item{ref_date}{}
+  \item{ret_adjusted_prices}{}
+  \item{ret_closing_prices}{}
+  }
 }
 \examples{
 library(noiris)
