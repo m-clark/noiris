@@ -1,5 +1,7 @@
 ---
-output: github_document
+output: 
+  github_document
+encoding: 'UTF-8'
 ---
 
 # noiris <img src="data-raw/noiris.png" style="margin: 0 auto; width: 10%">
@@ -19,6 +21,7 @@ Right now it has:
 - `fish`: an accessible data set useful for demonstrating count and zero-inflated/hurdle models.
 - `pisa`: OECD's Programme for International Student Assessment with international scores for math, science, and reading.  Potentially  good for demonstrating nonlinear relationships, imputing missing data, longitudinal/spatial analyses. 
 - `world_happiness`: Multiyear data set with country level scores of 'happiness'. From 2019 World Happiness Report.
+- `sp500`: Daily S & P 500 data for a 10 year period cover +- 5 years before and after the Great Recession low.
 
 incoming: wine ratings?
 

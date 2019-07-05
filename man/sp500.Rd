@@ -5,6 +5,7 @@
 \alias{sp500}
 \title{S & P 500 data.}
 \format{The nested main data frame \code{sp500} has 505 rows and 10 variables:
+
 \describe{
   \item{ticker}{Company symbol}
   \item{company}{Company name}
@@ -27,13 +28,14 @@ Obtained via \href{https://cran.r-project.org/web/packages/BatchGetSymbols/vigne
 sp500
 }
 \description{
-Includ
+Daily stock data for the S & P 500 for a 10 year period.
 }
 \details{
-This is basic stock stock data for the current S & P 500 listing.
-  The time frame is a five year interval before and after the nadir of the
-  Great Recession (2009-03-03).  The final column is a list column where each
-  cell is a data frame with the following columns:
+This is basic stock stock data for the current S & P 500 listing
+  (see Wikipedia link). The time frame is a five year interval before and
+  after the nadir of the Great Recession (2009-03-03).  The final column is a
+  list column where each cell is a data frame with over a million rows and
+  the following columns:
 
 \describe{
   \item{price_open}{}
@@ -46,6 +48,10 @@ This is basic stock stock data for the current S & P 500 listing.
   \item{ret_adjusted_prices}{}
   \item{ret_closing_prices}{}
   }
+
+The data is unbalanced, as some of the current companies will have very
+little information during that time period.  Also there is otherwise
+'missing' data.
 }
 \examples{
 library(noiris)
