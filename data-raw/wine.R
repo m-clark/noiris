@@ -1,7 +1,9 @@
 # data found here: https://www.kaggle.com/zynicide/wine-reviews/  the
 # description is a little off. The '150k' version doesn't have any twitter/title
-# info, and both still have plenty of dupes (about 10k for 130, and 1/3 of 150), but for demo this should be
-# fine. It's not clear what the actual differences are between 130 and 150, so I just combined them to provide a maximum number of reviews.
+# info, and both still have plenty of dupes (about 10k for 130, and 1/3 of 150),
+# but for demo this should be fine. It's not clear what the actual differences
+# are between 130 and 150, so I just combined them to provide a maximum number
+# of reviews.
 
 wine_reviews0 = read_csv('data-raw/wine/winemag-data-130k-v2.csv')
 # wine_reviews0
