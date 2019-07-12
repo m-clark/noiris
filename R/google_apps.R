@@ -42,8 +42,8 @@
 #'   }
 #'
 #'
-#' @source  \url{https://www.kaggle.com/lava18/google-play-store-apps/}
-#' @note License is CC-BY
+#' @source  Data set created by \href{https://www.kaggle.com/lava18/google-play-store-apps/}{Lavanya Gupta}
+#' @note License is \href{https://www.kaggle.com/lava18/google-play-store-apps#license.txt}{CC-BY}
 #' @examples
 #' library(noiris)
 #' str(google_apps, 1)

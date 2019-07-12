@@ -27,7 +27,7 @@
   \item{greviews}{A list column. See details.}
   }}
 \source{
-\url{https://www.kaggle.com/lava18/google-play-store-apps/}
+Data set created by \href{https://www.kaggle.com/lava18/google-play-store-apps/}{Lavanya Gupta}
 }
 \usage{
 google_apps
@@ -53,7 +53,7 @@ This data set is joins two data from the Kaggle link.  The data was
   }
 }
 \note{
-License is CC-BY
+License is \href{https://www.kaggle.com/lava18/google-play-store-apps#license.txt}{CC-BY}
 }
 \examples{
 library(noiris)
