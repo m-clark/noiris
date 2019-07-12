@@ -6,7 +6,7 @@ encoding: 'UTF-8'
 
 # noiris <img src="data-raw/noiris.png" style="margin: 0 auto; width: 10%">
 
-This package is primarily to provide data that is more similar to what people would typically come across in the wild, or is simply more interesting or accessible (in my opinion), and more useful for instruction and workshops.  Far too often examples use `iris`, `mtcars`, etc. for convenience, but these are actually inconvenient for demonstrating common data and modeling problems, or are too small to even be realistic.  
+This package is primarily to provide data that is more similar to what many people would typically come across in the wild, or is simply more interesting or accessible (in my opinion), and more useful for instruction and workshops.  Far too often examples use `iris`, `mtcars`, etc. for convenience, but these are actually inconvenient for demonstrating common data and modeling problems, or are too small to even be realistic.  
 
 This package will provide larger and at some point messier data.  The bias is towards data that could be understood regardless of discipline/background. In addition, it should have minimally several hundred observations, and often much larger, but not so large that analysis or data processing demonstration would take an inordinate amount of time.  However, it should have relatively few columns (unless for demonstration of a 'large p' type of problem/analysis, e.g. penalized regression.).
 
@@ -47,3 +47,4 @@ To do:
 - [ ] Data for image classification
 - [ ] Data for survival analysis
 - [ ] Data for factor analysis/SEM (PCA?)
+- [ ] Data Non-obvious cluster analysis (no iris! and no old faithful either!)
