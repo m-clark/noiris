@@ -1,0 +1,53 @@
+#' Google apps data.
+#'
+#' Ratings and other information for Google Play Store apps.
+#'
+#' @format The nested main data frame \code{google_apps} has 10,841 rows and 14
+#'   variables:
+#'
+#' \describe{
+#'   \item{app}{Application name}
+#'   \item{category}{Category the app belongs to}
+#'   \item{rating}{Overall user rating of the app}
+#'   \item{reviews}{Number of user reviews for the app}
+#'   \item{size}{Size of the app (as when scraped)}
+#'   \item{installs}{Number of user downloads/installs for the app}
+#'   \item{type}{Paid or Free}
+#'   \item{price}{Price of the app (as when scraped)}
+#'   \item{content_rating}{Age group the app is targeted at - Children / Mature
+#'   21+ / Adult}
+#'   \item{genres}{An app can belong to multiple genres (apart from its main
+#'   category). For example, a musical family game will belong to Music, Game,
+#'   Family genres.}
+#'   \item{last_updated}{Date when the app was last updated on Play Store}
+#'   \item{current_ver}{Current version of the app available on Play Store}
+#'   \item{android_ver}{Min required Android version}
+#'   \item{greviews}{A list column. See details.}
+#'   }
+#'
+#' @details This data set is joins two data from the Kaggle link.  The data was
+#'   scraped and to some extent cleaned before presented to Kaggle.  I made
+#'   alterations to make the \code{last_updated} an actual date column, and the
+#'   size a numeric column after stripping the M (megabyte) and k (kilobyte).
+#'   The final column is a list column of actual reviews that can be used for
+#'   text analysis, sentiment analysis and similar. Each data set within
+#'   \code{greviews} contains the following columns:
+#'
+#' \describe{
+#'   \item{Translated_Review}{User review (pre-processed and translated to
+#'   English)}
+#'   \item{Sentiment}{Positive/Negative/Neutral (pre-processed)}
+#'   \item{Sentiment_Polarity}{Sentiment polarity score}
+#'   \item{Sentiment_Subjectivity}{Sentiment subjectivity score}
+#'   }
+#'
+#'
+#' @source  \url{https://www.kaggle.com/lava18/google-play-store-apps/}
+#' @note License is CC-BY
+#' @examples
+#' library(noiris)
+#' str(google_apps, 1)
+#'
+#'
+#'
+"google_apps"

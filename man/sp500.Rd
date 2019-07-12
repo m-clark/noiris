@@ -21,7 +21,7 @@
   \item{pricing_data}{A list column. See details.}
   }}
 \source{
-Obtained via \href{https://cran.r-project.org/web/packages/BatchGetSymbols/vignettes/BatchGetSymbols-vignette.html}{\code{BatchGetSymbols}} package.
+Publicly available data obtained via \href{https://cran.r-project.org/web/packages/BatchGetSymbols/vignettes/BatchGetSymbols-vignette.html}{\code{BatchGetSymbols}} package.
 \href{https://en.wikipedia.org/wiki/List_of_S&P_500_companies}{Wikipedia List of S & P 500 companies}.
 }
 \usage{
