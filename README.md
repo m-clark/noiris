@@ -2,7 +2,7 @@
 # noiris <img src="data-raw/noiris.png" style="margin: 0 auto; width: 10%">
 
 This package is primarily to provide data that is more similar to what
-people would typically come across in the wild, or is simply more
+many people would typically come across in the wild, or is simply more
 interesting or accessible (in my opinion), and more useful for
 instruction and workshops. Far too often examples use `iris`, `mtcars`,
 etc. for convenience, but these are actually inconvenient for
@@ -18,8 +18,10 @@ amount of time. However, it should have relatively few columns (unless
 for demonstration of a ‘large p’ type of problem/analysis,
 e.g. penalized regression.).
 
-Some of the data comes from elsewhere, but has been cleaned up to make
-it easier to use and understand.
+## Data
+
+In most cases the data has been cleaned up to make it easier to use and
+understand.
 
 Right now it has:
 
@@ -39,12 +41,14 @@ Right now it has:
       - An accessible data set useful for demonstrating count models
         including zero-inflated/hurdle models.
   - `pisa`: OECD’s Programme for International Student Assessment with
-    international scores for math, science, and reading.
+    international scores for math, science, and reading, covering years
+    2000-2015.
       - Potentially good for demonstrating nonlinear relationships
         (e.g. GAM), imputing missing data, longitudinal/spatial
         analyses.
   - `world_happiness`: Multiyear data set with country level scores of
-    ‘happiness’. From 2019 World Happiness Report.
+    ‘happiness’. From 2019 World Happiness Report, and includes data
+    from 2005-2018.
       - Similar to Gapminder and PISA, this could be used for a variety
         of standard statistical models.
   - `sp500`: Daily S & P 500 data for a 10 year period covering +- 5
@@ -57,11 +61,15 @@ Right now it has:
       - Can be used for standard regression and classification, ordinal
         regression, text analysis, sentiment analysis.
 
+## Installation
+
 This package is not on CRAN. To install:
 
 ``` r
 devtools::install_github('m-clark/noiris')
 ```
+
+## Other
 
 To do:
 
@@ -71,3 +79,5 @@ To do:
   - \[ \] Data for image classification
   - \[ \] Data for survival analysis
   - \[ \] Data for factor analysis/SEM (PCA?)
+  - \[ \] Data Non-obvious cluster analysis (no iris\! and no old
+    faithful either\!)
