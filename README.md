@@ -60,6 +60,9 @@ Right now it has:
     machine learning.
       - Can be used for standard regression and classification, ordinal
         regression, text analysis, sentiment analysis.
+  - `google_apps`: Ratings and other information for Google Play Store
+    apps.
+      - Text & sentiment analysis, standard regression, etc.
 
 ## Installation
 
