@@ -18,8 +18,9 @@ gapps = gapps %>%
     size = case_when(
       grepl(size, pattern = 'M$') ~ as.numeric(str_remove(size, pattern = 'M')),
       grepl(size, pattern = 'k$') ~ as.numeric(str_remove(size, pattern = 'k'))/1000,
-      TRUE ~ 0
-    ))
+      TRUE ~ NA_real_
+    )) %>%
+  rename(size_in_MB = size)
 
 greviews = greviews %>%
   janitor::remove_empty() %>%
