@@ -12,7 +12,7 @@ n_distinct(greviews$App)
 gapps = gapps %>%
   janitor::remove_empty() %>%
   janitor::clean_names() %>%
-  distinct() %>%
+  distinct(app, rating, size, last_updated, current_ver, .keep_all = T) %>%  # get rid of slight reviews differences
   mutate(
     last_updated = lubridate::mdy(last_updated),
     size = case_when(
@@ -41,5 +41,8 @@ google_apps = google_apps %>%
     map(greviews, nrow) == 0,
     NA,
     greviews))
+
+google_apps
+google_apps$greviews[1:10]
 
 usethis::use_data(google_apps, overwrite = TRUE)
