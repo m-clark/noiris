@@ -63,6 +63,9 @@ Right now it has:
   - `google_apps`: Ratings and other information for Google Play Store
     apps.
       - Text & sentiment analysis, standard regression, etc.
+  - `fashion_train`, `fasion_test`: The ‘Fashion MNIST’. Image data for
+    clothing items.
+      - Image classification, cluster analysis
 
 ## Installation
 
@@ -79,7 +82,7 @@ To do:
   - \[X\] Data for basic classification
   - \[X\] Data for basic machine learning (reg and class)
   - \[X\] Data for text analysis (more to come)
-  - \[ \] Data for image classification
+  - \[X\] Data for image classification
   - \[ \] Data for survival analysis
   - \[ \] Data for factor analysis/SEM (PCA?)
   - \[ \] Data Non-obvious cluster analysis (no iris\! and no old
