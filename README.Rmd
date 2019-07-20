@@ -46,6 +46,9 @@ Right now it has:
 
 - `fashion_train`, `fasion_test`: The 'Fashion MNIST'. Image data for clothing items.
     - Image classification, cluster analysis
+
+- `gender_gap`, `gender_gap_2018`: Country level data regarding the World Bank Gender Gap Index.
+    - Longitudinal analysis, geospatial analysis, etc.
     
 ## Installation
 
