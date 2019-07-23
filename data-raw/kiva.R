@@ -33,8 +33,18 @@ kiva = kiva_loan_info %>%
 library(tidyext)
 
 kiva %>% describe_all_num()
-kiva %>% describe_all_cat() # takes a bit
+# kiva %>% describe_all_cat() # takes a bit
 
 kiva %>% summarise_all(n_distinct) %>% glimpse()
 
 format(object.size(kiva), 'Mb')
+
+# fix mpi lat lon
+test = kiva %>%
+  select(-starts_with('geo')) %>%        # keep mpi geo
+  mutate(latlon_mpi = str_remove_all(mpi_geo, '[\\(\\)]'),
+         latlon_mpi = str_split(latlon_mpi, pattern = ', '))
+%>%   # remove parens
+  select(contains('id'), everything())
+
+usethis::use_data(kiva, overwrite = TRUE)
