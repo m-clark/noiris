@@ -21,11 +21,29 @@ kiva_loan_region_ids = kiva[[4]]
 n_distinct(kiva_loan_ids$id)
 n_distinct(kiva_base$id)
 
+
+# fix genders
+test = kiva_base %>%
+  mutate(borrower_female_n = str_count(borrower_genders, 'female'),
+         borrower_male_n = str_count(borrower_genders, 'male') - borrower_female_n) %>%
+  select(contains('borrow'))
+
+# test %>% data.frame() %>% slice(150:200) # check
+
+
+# fix mpi_geo
+kiva_loan_region_ids = kiva_loan_region_ids %>%
+  mutate(mpi_geo = str_remove_all(mpi_geo, '[\\(\\)]'),
+       lat_mpi = sapply(mpi_geo, str_split, pattern = ', ')[[1]][1],
+       lon_mpi = sapply(mpi_geo, str_split, pattern = ', ')[[1]][2]) %>%
+  mutate_at(vars(lat_mpi, lon_mpi), as.numeric)
+
 kiva_loan_info = kiva_loan_ids %>%
   left_join(kiva_base)
 
 kiva_location_info = kiva_loan_region_ids %>%
   left_join(kiva_locations)
+
 
 kiva = kiva_loan_info %>%
   left_join(kiva_location_info)
@@ -39,12 +57,10 @@ kiva %>% summarise_all(n_distinct) %>% glimpse()
 
 format(object.size(kiva), 'Mb')
 
-# fix mpi lat lon
+
 test = kiva %>%
-  select(-starts_with('geo')) %>%        # keep mpi geo
-  mutate(latlon_mpi = str_remove_all(mpi_geo, '[\\(\\)]'),
-         latlon_mpi = str_split(latlon_mpi, pattern = ', '))
-%>%   # remove parens
-  select(contains('id'), everything())
+  select(-contains('geo'))
+
+glimpse(test)
 
 usethis::use_data(kiva, overwrite = TRUE)
