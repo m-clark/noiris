@@ -23,12 +23,14 @@ n_distinct(kiva_base$id)
 
 
 # fix genders
-test = kiva_base %>%
+kiva_base = kiva_base %>%
   mutate(borrower_female_n = str_count(borrower_genders, 'female'),
          borrower_male_n = str_count(borrower_genders, 'male') - borrower_female_n) %>%
-  select(contains('borrow'))
+  mutate(term_in_months = as.integer(term_in_months),
+         lender_count = as.integer(lender_count),
+         partner_id = as.integer(partner_id))
 
-# test %>% data.frame() %>% slice(150:200) # check
+
 
 
 # fix mpi_geo
