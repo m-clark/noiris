@@ -39,7 +39,7 @@ kiva_base = kiva_base %>%
 
 # remove redundancy
 kiva_locations = kiva_locations %>%
-  select(-geo, -geocode)
+  select(-geo)
 
 # make integers
 kiva_loan_ids = kiva_loan_ids %>%
@@ -57,7 +57,7 @@ kiva_loan_region_ids = kiva_loan_region_ids %>%
     lon_mpi = sapply(mpi_geo, str_split, pattern = ', ')[[1]][2],
   ) %>%
   mutate_at(vars(lat_mpi, lon_mpi), as.numeric) %>%
-  select(-geocode_old, -mpi_geo)
+  select(-geocode_old, -mpi_geo, -geocode, -geo)
 
 
 # merge
@@ -90,13 +90,16 @@ kiva = kiva %>%
     contains('country'),
     iso,
     contains('region'),
-    contains('loan'),
     matches('^lat|^lon'),
+    contains('mpi'),
+    location_name,
+    contains('loan'),
     date,
     contains('time'),
     term_in_months,
     contains('lender'),
     contains('borrower'),
+    everything()
     )
 
 usethis::use_data(kiva, overwrite = TRUE)
