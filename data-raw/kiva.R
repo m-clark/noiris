@@ -102,4 +102,6 @@ kiva = kiva %>%
     everything()
     )
 
+glimpse(kiva)
+
 usethis::use_data(kiva, overwrite = TRUE)
