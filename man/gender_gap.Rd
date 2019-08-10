@@ -32,7 +32,7 @@
   expect to live in full health, calculated by taking into account years
   lived in less than full health due to disease and/or injury.}
   \item{labour_force_participation}{Measures the proportion of a country’s
-  working-age population that engages actively in the labour market, either
+  working-age population that engages actively in the labor market, either
   by working or looking for work.}
   \item{legislators_senior_officials_and_managers}{The ratio of women to men
   employed in senior roles.}
