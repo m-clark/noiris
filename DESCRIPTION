@@ -13,14 +13,9 @@ URL: https://github.com/m-clark/fckiris
 BugReports: https://github.com/m-clark/fckiris/issues
 Year: 2019
 Depends:
-  R (>= 3.5.0)
+  R (>= 3.4.0)
 Imports:
-  dplyr,
-  magrittr,
-  purrr,
-  rlang,
-  ggplot2,
-  tibble,
 Suggests:
   gapminder,
-  rwars
+  rwars,
+  dplyr
