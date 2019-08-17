@@ -1,4 +1,4 @@
-#' Water risk data.
+#' Water risk data
 #'
 #' From the website: Water is essential to the progress of human societies. It
 #' is required for a healthy environment and a thriving economy. Food

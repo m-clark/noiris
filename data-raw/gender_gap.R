@@ -1,7 +1,7 @@
 library(tidyverse)
 library(tidyext)
 
-gender_gap0 = read_csv('data-raw/wef_gender_gap.csv') %>%
+gender_gap0 = read_csv('data-raw/gender-gap/wef_gender_gap.csv') %>%
   janitor::clean_names() %>%
   janitor::remove_empty()
 

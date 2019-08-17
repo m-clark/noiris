@@ -1,4 +1,4 @@
-#' Fashion MNIST data.
+#' Fashion MNIST data
 #'
 #' From the Kaggle entry: Fashion-MNIST is a dataset of Zalando's article images
 #' consisting of a training set of 60,000 examples (\code{fashion_train})and a

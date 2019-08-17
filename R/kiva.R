@@ -1,4 +1,4 @@
-#' Kiva crowdfunding data.
+#' Kiva crowdfunding data
 #'
 #' From the Kaggle website description: Kiva.org is an online crowdfunding
 #' platform to extend financial services to poor and financially excluded people

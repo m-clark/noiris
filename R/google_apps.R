@@ -1,4 +1,4 @@
-#' Google apps data.
+#' Google apps data
 #'
 #' Ratings and other information for Google Play Store apps.
 #'
