@@ -1,4 +1,4 @@
-#' Gender gap data.
+#' Gender gap data
 #'
 #' From the World Bank description: The Global Gender Gap Index examines the gap
 #' between men and women in four fundamental categories (subindexes) and 14

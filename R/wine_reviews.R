@@ -1,4 +1,4 @@
-#' Wine Reviews
+#' Wine Reviews data
 #'
 #' @description Two data sets regarding wine reviews.
 #'
