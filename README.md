@@ -24,10 +24,11 @@ In general the goals are:
   - Clean messy data (not a typo). Most of the data is relatively clean,
     but some will have missing values, require text cleaning, etc.
   - Well documented data. All columns will have descriptions (unless
-    otherwise not possible), article references, and web sources will be
-    provided.
+    otherwise not possible), and article references and web sources will
+    be provided.
   - Well named data. It can be very annoying if something is called d,
-    an author name, an acronym, etc.
+    an author name, an acronym, etc. Columns are also renamed for some
+    data sets for clarity.
   - Data that covers common analyses.
 
 ## Data
@@ -90,6 +91,8 @@ Right now it has:
   - `bfi`: Big Five personality traits.
       - scale reliability, factor analysis, item response theory,
         structural equation modeling.
+  - `heart_disease`: Heart disease.
+      - survival, classification.
 
 ## Installation
 
@@ -104,13 +107,15 @@ devtools::install_github('m-clark/noiris')
 To do:
 
   - \[X\] Data for basic classification
-  - \[X\] Data for basic machine learning (reg and class)
+  - \[X\] Data for basic machine learning (regression and
+    classification)
   - \[X\] Data for text analysis (more to come)
   - \[X\] Data for image classification
-  - \[ \] Data for survival analysis
+  - \[X\] Data for survival analysis
   - \[X\] Data for factor analysis/SEM (PCA?)
   - \[ \] Data for non-obvious cluster analysis (no iris\! and no old
     faithful either\!).
+  - \[ \] Zero-one data suitable for zip, beta regression, etc.
 
 Note to self, see flexmix, poLCA, and other packages. Maybe add classic
 biochemists for another count data set.
