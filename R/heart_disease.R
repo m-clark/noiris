@@ -1,0 +1,59 @@
+#' Heart Disease data
+#'
+#' From the Kaggle website: This database contains 76 attributes, but all
+#' published experiments refer to using a subset of 14 of them. In particular,
+#' the Cleveland database is the only one that has been used by ML researchers
+#' to this date. The "goal" field refers to the presence of heart disease in the
+#' patient. It is integer valued from 0 (no presence) to 4. Experiments with the
+#' Cleveland database have concentrated on simply attempting to distinguish
+#' presence (values 1,2,3,4) from absence (value 0).
+#'
+#' This data is useful for standard classification/survival (if using age).
+#'
+#' @format Data frame with 14 variables
+#' \describe{
+#'   \item{age}{age in years}
+#'   \item{sex}{Male or female}
+#'   \item{chest_pain_type}{typical angina, atypical angina, non-anginal pain, asymptomatic}
+#'   \item{resting_bp}{resting blood pressure (in mm Hg on admission to the hospital)}
+#'   \item{cholesterol}{serum cholestoral in mg/dl}
+#'   \item{fasting_blood_sugar}{blood sugar > 120 mg/dl vs. less than ('lt_120', 'gt_120')}
+#'   \item{resting_ecg}{resting electrocardiographic results}
+#'   \item{max_heartrate}{maximum heart rate achieved}
+#'   \item{exer_angina}{exercise induced angina (yes or no)}
+#'   \item{old_peak}{ST depression induced by exercise relative to rest. See \href{https://en.wikipedia.org/wiki/ST_segment}{this} for explanation of ST.}
+#'   \item{slope}{the slope of the peak exercise ST segment: positive flat or negative. See \href{https://en.wikipedia.org/wiki/ST_segment}{this} for explanation of ST.}
+#'   \item{n_vessels}{number of major vessels (0-3) colored by flourosopy}
+#'   \item{defect}{normal, fixed defect, or reversible defect}
+#'   \item{heart_disease}{1 = yes, 0 = no. Left as numeric.}
+#' }
+#'
+#' @details This is the classic heart disease data only prepped for actual use
+#'   and with more useful names/labels where possible.  For reference the
+#'   original names are: age, sex, cp, trestbps, chol, fbs, restecg, thalach,
+#'   exang, oldpeak, slope, ca, thal, target.
+#'
+#' @note The values are sometimes labeled 1:4 while the actual data values
+#' are 0-3 and similar.  Assumptions have been made that these coincide as one
+#' would expect. Thal describes values of 3, 6, 7 but was actually coded 0-3
+#' with only two zero values.  The zeros  were converted to NA.
+#'
+#'
+#' @source \href{https://archive.ics.uci.edu/ml/datasets/Heart+Disease}{Data link}
+#' @references
+#' Detrano, R., Janosi, A., Steinbrunn, W., Pfisterer, M., Schmid, J., Sandhu,
+#' S., Guppy, K., Lee, S., & Froelicher, V. (1989). International application of
+#' a new probability algorithm for the diagnosis of coronary artery disease.
+#' American Journal of Cardiology, 64,304--310.
+#'
+#' David W. Aha & Dennis Kibler. "Instance-based prediction of heart-disease
+#' presence with the Cleveland database."
+#'
+#' Gennari, J.H., Langley, P, & Fisher, D. (1989). Models of incremental concept
+#' formation. Artificial Intelligence, 40, 11-61.
+#'
+#' @examples
+#' library(noiris)
+#' str(heart_disease)
+#'
+"heart_disease"

@@ -4,7 +4,7 @@
 \name{water_risk}
 \alias{water_risk}
 \alias{water_risk_province}
-\title{Water risk data.}
+\title{Water risk data}
 \format{Two data frames. One is at the country level (n = 189), while the
   other is at the province level (n=3311).
 

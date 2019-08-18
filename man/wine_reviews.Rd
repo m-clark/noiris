@@ -4,7 +4,7 @@
 \name{wine_reviews}
 \alias{wine_reviews}
 \alias{wine_quality}
-\title{Wine Reviews}
+\title{Wine Reviews data}
 \format{The first is \code{wine_reviews}, a CC0 release of data obtained from
   Kaggle.  I combined the two data sets available there and removed
   duplicates.  Not every data point will have twitter info, but all will have

@@ -3,7 +3,7 @@
 \docType{data}
 \name{kiva}
 \alias{kiva}
-\title{Kiva crowdfunding data.}
+\title{Kiva crowdfunding data}
 \format{Several data frames combined by id: kiva_loans,
   kiva_mpi_region_locations, loan_theme_ids, loan_themes_by_region. Original
   names and descriptions are provided.
