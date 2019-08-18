@@ -4,7 +4,7 @@
 \name{fashion_train}
 \alias{fashion_train}
 \alias{fashion_test}
-\title{Fashion MNIST data.}
+\title{Fashion MNIST data}
 \format{A standard data frame with the following columns:
 
 \describe{

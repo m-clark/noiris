@@ -4,7 +4,7 @@
 \name{gender_gap}
 \alias{gender_gap}
 \alias{gender_gap_2018}
-\title{Gender gap data.}
+\title{Gender gap data}
 \format{Two data frames. The first regards just the gender gap indices.
   There is more data for this for most countries, potentially starting as far
   back as 2006.  The second data set has only 2018 data but more indicators.

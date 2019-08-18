@@ -3,7 +3,7 @@
 \docType{data}
 \name{google_apps}
 \alias{google_apps}
-\title{Google apps data.}
+\title{Google apps data}
 \format{The nested main data frame \code{google_apps} has 9707 rows and 14
   variables:
 
