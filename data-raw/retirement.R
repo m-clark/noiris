@@ -11,8 +11,8 @@ retirement = retirement %>%
   mutate(sole = factor(sole, labels = c('not', 'only_plan'))) %>%
   rename(
     participation_n = partic,
-    emp_total = totemp,
-    emp_eligible = employ,
+    emp_total_n = totemp,
+    emp_eligible_n = employ,
     matching_rate = mrate,
     participation_rate = prate,
     only_plan = sole,
