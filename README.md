@@ -91,7 +91,7 @@ Right now it has:
   - `bfi`: Big Five personality traits.
       - scale reliability, factor analysis, item response theory,
         structural equation modeling.
-  - `heart_disease`: Heart disease.
+  - `heart_disease`: The UCI heart disease data.
       - survival, classification.
 
 ## Installation
@@ -113,9 +113,12 @@ To do:
   - \[X\] Data for image classification
   - \[X\] Data for survival analysis
   - \[X\] Data for factor analysis/SEM (PCA?)
+  - \[X\] Data on the unit interval suitable for zip, beta regression,
+    etc.
   - \[ \] Data for non-obvious cluster analysis (no iris\! and no old
     faithful either\!).
-  - \[ \] Zero-one data suitable for zip, beta regression, etc.
+  - \[ \] Data for network/graphical models and visualization.
 
 Note to self, see flexmix, poLCA, and other packages. Maybe add classic
-biochemists for another count data set.
+biochemists for another count data set. Article pub for link models and
+related.
