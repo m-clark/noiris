@@ -6,18 +6,14 @@
 \alias{noiris-package}
 \title{noiris: Data sets}
 \description{
-This package is primarily to provide data that is more relevant to
- actual data people would typically come across in the wild, or is simply
- more interesting (at least to me).  Far too often examples use iris, mtcars,
- etc. for convenience, but actually are inconvenient for demonstrating real
- data and modeling problems, or are too small to even be realistic.  This
- package will provide larger and at some point messier data.
- @details Right now it has:
-
-\describe{
-  \item{\code{gapminder}}{a 2019 pull from \url{http://www.gapminder.org/data/}}
-  \item{\code{starwars}}{a variety of cleaned data sets produced using the \link[rwars]{rwars} package.}
-  }
+The goal of this package is primarily to provide data that is
+  more relevant to the kind people would more typically come across in the wild,
+  or is simply more interesting (at least to me).  Far too often examples use
+  iris, mtcars, etc. for convenience, but these actually are inconvenient for
+  demonstrating real data and modeling problems, or are too small to be very
+  realistic examples of everyday data.  This package will provide larger and
+  at some point messier data, that is better named, better documented, and
+  would be useful across a variety of modeling contexts.
 }
 \seealso{
 Useful links:
