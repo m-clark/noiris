@@ -64,11 +64,14 @@ Right now it has:
 - `water_risk`, `water_risk_province`: Country and province level data regarding water risk.
     - geospatial analysis and visualization
     
-- `bfi`: Big Five personality traits.
+- `big_five`: Big Five personality traits.
     - scale reliability, factor analysis, item response theory, structural equation modeling.
 
 - `heart_disease`: The UCI heart disease data.
     - survival, classification.
+
+- `retirement`: Data on retirement plan participation rate of employees.
+    - binomial glm, fractional regression, beta regression.
     
 ## Installation
 
