@@ -96,6 +96,9 @@ Right now it has:
   - `retirement`: Data on retirement plan participation rate of
     employees.
       - binomial glm, fractional regression, beta regression.
+  - `movielens`: 1 million samples from MovieLens data.
+      - recommendation systems, item response theory, cluster analysis,
+        etc.
 
 ## Installation
 
@@ -116,9 +119,9 @@ To do:
   - \[X\] Data for image classification
   - \[X\] Data for survival analysis
   - \[X\] Data for factor analysis/SEM (PCA?)
-  - \[X\] Data on the unit interval suitable for zip, beta regression,
-    etc.
-  - \[ \] Data for non-obvious cluster analysis (no iris\! and no old
+  - \[X\] Data on the unit interval suitable for binomial, beta
+    regression, etc.
+  - \[X\] Data for non-obvious cluster analysis (no iris\! and no old
     faithful either\!).
   - \[ \] Data for network/graphical models and visualization.
 
