@@ -34,6 +34,4 @@ _book/*.pdf
 *.stan linguist-language=Stan
 *.inp linguist-language=Mplus
 *.out linguist-generated=true
-data-raw/fashion-mnist/fashion-mnist_train.csv filter=lfs diff=lfs merge=lfs -text
-data-raw/fashion-mnist/fashion-mnist_test.csv filter=lfs diff=lfs merge=lfs -text
-*.csv filter=lfs diff=lfs merge=lfs -text
+
